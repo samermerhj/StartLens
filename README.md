@@ -69,3 +69,16 @@ If you find StartLens useful, you can support its development with a crypto dona
 - **Bitcoin (Electrum Wallet - Open Source):** `bc1qrh4nw70w5hyrg4myuppv879z6sp40lzvr9k69m`
 
 [![Donate with Bitcoin](https://img.shields.io/badge/Donate-Bitcoin-ff9900?logo=bitcoin)](bitcoin:bc1qrvreuvad7uerec9v8sjl9e5z2p5grypc44ntmf)
+
+
+
+
+## 📄 Acknowledgments
+
+This project uses the **Qt framework** (LGPL v3).  
+Qt is licensed under the GNU Lesser General Public License (LGPL) v3 and is available at: [https://www.qt.io](https://www.qt.io)
+
+The source code of Qt used by this application can be obtained from: [https://code.qt.io/cgit/qt/](https://code.qt.io/cgit/qt/)
+
+
+
