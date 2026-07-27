@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+
+for user in $(getent passwd | awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}'); do
+    home=$(getent passwd "$user" | cut -d: -f6)
+
+    # مجلد الصور
+    mkdir -p "$home/Pictures/StartLens"
+    cp -n /usr/share/startlens/images/* "$home/Pictures/StartLens/" 2>/dev/null || true
+    chown -R "$user:$user" "$home/Pictures/StartLens" 2>/dev/null || true
+
+    # أيقونة StartLens الأساسية (اختصار سطح المكتب)
+    mkdir -p "$home/Desktop"
+    cp /usr/share/applications/startlens.desktop "$home/Desktop/startlens.desktop" 2>/dev/null || true
+    chown "$user:$user" "$home/Desktop/startlens.desktop" 2>/dev/null || true
+
+    # أيقونة أداة الإعداد (StartLens Setup)
+    cp /usr/share/startlens/startlens-setup.desktop "$home/Desktop/startlens-setup.desktop" 2>/dev/null || true
+    chown "$user:$user" "$home/Desktop/startlens-setup.desktop" 2>/dev/null || true
+done
+
+exit 0

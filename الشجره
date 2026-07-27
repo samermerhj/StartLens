@@ -1,0 +1,73 @@
+
+
+startlens/
+├── .github/
+│   └── FUNDING.yml
+├── debian/
+│   ├── changelog
+│   ├── compat
+│   ├── control
+│   ├── copyright
+│   ├── rules
+│   ├── postinst
+│   ├── prerm
+│   └── postrm
+├── resources/
+│   ├── startlens.desktop
+│   ├── icons/
+│   │   └── startlens.svg
+│   └── IMG/
+│       ├── bg1.jpg
+│       └── bg2.png
+├── scripts/
+│   └── lxqt-integration.sh
+├── applistmodel.h
+├── applistmodel.cpp
+├── carddelegate.h
+├── carddelegate.cpp
+├── main.cpp
+├── qhotkey.h
+├── qhotkey.cpp
+├── startlens.h
+├── startlens.cpp
+├── startlens_scanner.h
+├── startlens_scanner.cpp
+├── startlens_settings.h
+├── startlens_settingsdialog.h
+├── startlens_settings.cpp
+├── startlens_settingsdialog.cpp
+├── startlens_usage.h
+├── startlens_usage.cpp
+├── startlens_view.h
+├── startlens_view.cpp
+├── shutdowndialog.h
+├── shutdowndialog.cpp
+├── utils.h
+├── SafeFileWriter.h
+├── CMakeLists.txt
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── DONATION.md
+├── LICENSE
+└── README.md
+
+
+
+startlens/
+├── CMakeLists.txt              ← إعدادات البناء (Qt5 + X11)
+├── main.cpp                    ← نقطة الدخول، أيقونة النظام، اختصار Super+Space
+├── startlens.h                 ← تعريف نافذة StartLens الرئيسية
+├── startlens.cpp               ← إدارة النافذة، التفاعلات، الأزرار، البحث
+├── startlens_scanner.h         ← تعريف ماسح التطبيقات والمجموعات
+├── startlens_scanner.cpp       ← مسح .desktop وتحميل appgroups.json
+├── startlens_usage.h           ← تعريف متتبع الاستخدام والتثبيت
+├── startlens_usage.cpp         ← تحميل/حفظ usage.json و pinned.json
+├── startlens_view.h            ← تعريف مكون عرض القائمة
+├── startlens_view.cpp          ← بناء قائمة العرض (Pinned, Most Used, Recent، التصنيفات)
+├── applistmodel.h              ← تعريف نموذج البيانات (SystemItem) والكاش
+├── applistmodel.cpp            ← تنفيذ النموذج، تحميل الأيقونات مع كاش
+├── carddelegate.h              ← تعريف مندوب رسم البطاقات
+├── carddelegate.cpp            ← رسم البطاقات (الألوان، الأيقونات، التحويم)
+├── qhotkey.h                   ← تعريف فئة الاختصار العام
+├── qhotkey.cpp                 ← تنفيذ الاختصار عبر X11/XCB
+└── utils.h                     ← دوال مساعدة (تصنيف التطبيقات)

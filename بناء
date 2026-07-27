@@ -1,0 +1,12 @@
+cd ~/Starlens
+mkdir -p build && cd build
+cmake ..
+make -j$(nproc)
+./startlens
+
+
+
+
+```
+
+---

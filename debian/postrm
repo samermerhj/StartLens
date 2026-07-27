@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "purge" ]; then
+    rm -rf /usr/share/startlens
+    for user in $(getent passwd | awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}'); do
+        home=$(getent passwd "$user" | cut -d: -f6)
+        rm -rf "$home/.config/StartLens" "$home/Pictures/StartLens"
+        rm -f "$home/Desktop/startlens.desktop"
+    done
+    update-desktop-database /usr/share/applications 2>/dev/null || true
+    gtk-update-icon-cache -f -t /usr/share/icons/hicolor 2>/dev/null || true
+fi
+
+exit 0

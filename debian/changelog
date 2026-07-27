@@ -1,0 +1,8 @@
+startlens (1.0.0-beta) unstable; urgency=medium
+
+  * Initial beta release.
+  * Desktop icon only, hidden from application menus.
+  * Added LXQt integration script.
+  * Cleanup scripts improved.
+
+ -- Samer Merhj <mjosak7@gmail.com>  Mon, 20 Jul 2026 00:00:00 +0000

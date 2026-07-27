@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0.0
+Type=Application
+Name=Start Lens
+Comment=Fast application launcher (Super+Space)
+Exec=startlens
+Icon=startlens
+Terminal=false
+NoDisplay=true
+Categories=
+Keywords=launcher;start;menu;applications;
+StartupNotify=true

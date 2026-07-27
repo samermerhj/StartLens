@@ -1,0 +1,18 @@
+Source: startlens
+Section: utils
+Priority: optional
+Maintainer: Samer Merhj <mjosak7@gmail.com>
+Build-Depends: debhelper-compat (=13),
+               cmake,
+               qtbase5-dev,
+               libx11-dev,
+               libxcb1-dev,
+               pkg-config
+Standards-Version: 4.6.2
+Homepage: https://github.com/samermerhj/StartLens
+
+Package: startlens
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fast visual application launcher
+ StartLens provides instant app launching with Super+Space.

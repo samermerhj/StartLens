@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="24" fill="#1E88E5"/>
+  <circle cx="64" cy="64" r="32" fill="white" opacity="0.2"/>
+  <circle cx="64" cy="64" r="20" fill="white"/>
+  <path d="M64 30 L80 50 L48 50 Z" fill="#1E88E5"/>
+  <path d="M64 98 L48 78 L80 78 Z" fill="#1E88E5"/>
+  <text x="64" y="76" font-size="28" font-family="Arial" font-weight="bold" fill="#1E88E5" text-anchor="middle">⚡</text>
+</svg>
