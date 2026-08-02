@@ -65,10 +65,9 @@ Please respect the design principles that make StartLens special.
 
 If you find StartLens useful, you can support its development with a crypto donation:
 
-- **Bitcoin (Exodus Wallet):** `bc1qrvreuvad7uerec9v8sjl9e5z2p5grypc44ntmf`
 - **Bitcoin (Electrum Wallet - Open Source):** `bc1qrh4nw70w5hyrg4myuppv879z6sp40lzvr9k69m`
 
-[![Donate with Bitcoin](https://img.shields.io/badge/Donate-Bitcoin-ff9900?logo=bitcoin)](bitcoin:bc1qrvreuvad7uerec9v8sjl9e5z2p5grypc44ntmf)
+[![Donate with Bitcoin](https://img.shields.io/badge/Donate-Bitcoin-ff9900?logo=bitcoin)](bitcoin:bc1qrh4nw70w5hyrg4myuppv879z6sp40lzvr9k69m)
 
 
 
